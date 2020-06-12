@@ -1,17 +1,30 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-06-08 22:08:09
+ * @LastEditTime: 2020-06-08 23:00:09
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \formtest\src\App.vue
+--> 
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <draggable />
+    <el-alert>基于Vue+ElementUI制作一款表单设计器</el-alert>
+    <draggable-advance />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import HelloWorld from './components/HelloWorld.vue'
+import Draggable  from './components/Draggable.vue'
+import DraggableAdvance  from './components/DraggableAdvance.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld,
+    Draggable,
+    DraggableAdvance
+
   }
 }
 </script>
